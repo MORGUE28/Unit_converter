@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Unit_converter</string>
+    <string name="length">Length</string>
+    <string name="temp">Temp</string>
+    <string name="Area">Area</string>
+    <string name="Volume">volume</string>
+    <string name="abcd" />
+</resources>

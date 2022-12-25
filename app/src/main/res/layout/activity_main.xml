@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:fontFamily="sans-serif-thin"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp"
+        android:text="Unit Converter"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#FE8305"
+        android:textSize="65sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lenbtn"
+                style="@style/Button_Style"
+                android:layout_width="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:drawableTop="@mipmap/len"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/tempbtn"
+                style="@style/Button_Style"
+                android:layout_width="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:drawableTop="@mipmap/tmp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/areabtn"
+                style="@style/Button_Style"
+                android:layout_width="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:drawableTop="@mipmap/area" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/volbtn"
+                style="@style/Button_Style"
+                android:layout_width="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:drawableTop="@mipmap/vol" />
+
+        </TableRow>
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
